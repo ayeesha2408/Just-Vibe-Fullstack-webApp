@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+    <link rel="stylesheet" type="text/css" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Just vibe</title>
+  </head>
+  <body>
+    <!-- top navigation bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">  
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebar"
+          aria-controls="offcanvasExample"
+        >
+          <span class="navbar-toggler-icon k" data-bs-target="#sidebar"></span>
+        </button>
+        <a
+          class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
+          href="#"
+          >vibe <span><i class="fa-solid fa-play fa-shake"></i></span> pannrom</a
+        >
+        <div >
+          <a href="" style="text-decoration:none">
+            <h6 class="git" style="bottom: 0"><span style="padding: 0 5px 0 0;"><i class="fa-brands fa-square-github"></i></span>src_code</h6>
+          </a>
+        </div>
+         <!-- <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#topNavBar"
+          aria-controls="topNavBar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span style="color: aqua;"><i class="bi bi-search"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="topNavBar" style="padding-top: 14px;">
+           <form class="d-flex ms-auto my-3 my-lg-0">
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-dark" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+        </div> -->
+      </div>
+    </nav>
+    <!-- top navigation bar -->
+    <!-- offcanvas -->
+    <div
+      class="offcanvas offcanvas-start sidebar-nav sidebar-wrap"
+      tabindex="-1"
+      id="sidebar">
+      <div class="offcanvas-body p-0">
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="profile">
+            <a href="profile.html" class="nav-link">
+                <div class="icon-wrap">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <span>Profile</span>
+            </a>
+        </li>
+          <li class="home"> 
+              <a href="#home" class="nav-link">
+                  <div class="icon-wrap">
+                      <i class="fas fa-home"></i>
+                  </div>
+                  <span> Home</span>
+              </a>
+          </li>
+          
+          <li class="artists">
+              <a href="#slider" class="nav-link">
+                  <div class="icon-wrap">
+                    <i class="bi bi-people-fill"></i>
+                  </div>
+                  <span>Artists</span>
+              </a>
+          </li>
+          <li class="language">
+            <a href="#langs" class="nav-link">
+                <div class="icon-wrap">
+                  <i class="fa-solid fa-language"></i>
+                </div>
+                <span>Language</span>
+            </a>
+        </li>
+          <li class="song">
+            <a href="#songs" class="nav-link">
+                <div class="icon-wrap">
+                  <i class="fa-regular fa-calendar-days"></i>
+                </div>
+                <span>Decades</span>
+            </a>
+        </li>
+        <li class="all" onclick="filters(1)">
+          <div class="nav-link">
+              <div class="icon-wrap">
+                <i class="fa-solid fa-record-vinyl"></i>
+              </div>
+              <span>All</span>
+          </div>
+      </li>
+          <li class="liked" onclick="filters(0)">
+            <div class="nav-link">
+                  <div class="icon-wrap">
+                    <i class="fa-solid fa-heart fa-beat-fade"></i>
+                  </div>
+                  <span>Liked</span>
+            </div>
+          </li>
+          <!-- <li class="pricing">
+              <a href="pricing.html" class="nav-link">
+                  <div class="icon-wrap">
+                    <i class="fa-solid fa-sack-dollar fa-bounce"></i>
+                  </div>
+                  <span>Pricing</span>
+              </a>
+          </li> -->
+      </ul>
+        
+      </div>
+    </div>
+    <!-- offcanvas -->
+    <main>
+      <!-- carousel -->
+      <div class="container-fluid b">
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <section id="home">
+        <div id="carouselExampleInterval" class="carousel slide carousel-fade c" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner" style="max-height: 100vh;">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWMlMjBxdW90ZXN8ZW58MHx8MHx8fDA%3D.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="https://wallpapers.com/images/hd/music-quotes-btxt1o8myuhqmuka.jpg" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="https://cdn.wallpapersafari.com/74/29/koPFDc.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+       </section>
+       <!-- carousel -->
+
+       <!-- card -->
+       <div class="a">
+        <div class="sub_a">
+          <section id="slider" class="pt-5">
+            <div class="container">
+              <h1 class="text-center"><b>By Artists</b></h1>
+              <div class="slider">
+                  <div class="owl-carousel owl-carousels">
+                    <div class="slider-card" onclick="artist(0)">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="../images/anirudh.jpg" alt="" >
+                      </div>
+                      <h5 class="mb-0 text-center"><b>Anirudh Ravichander</b></h5>
+                      <p class="text-center p-4">Anirudh is an Indian music composer,and singer who works primarily in Tamil Cinema.He has won two Filmfare Awards South,nine SIIMA Awards.</p>
+                    </div>
+                    <div class="slider-card" onclick="artist(2)">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="../images/yuvan.jpg" alt="">
+                      </div>
+                      <h5 class="mb-0 text-center"><b>Yuvan Shankar Raja</b></h5>
+                      <p class="text-center p-4">Yuvan is an Indian music composer,and singer who works primarily in Tamil Cinema.he has won two Filmfare Awards South, five Mirchi Awards.</p>
+                    </div>
+                    <div class="slider-card" onclick="artist(1)">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="../images/gv-prakash-1.webp" alt="">
+                      </div>
+                      <h5 class="mb-0 text-center"><b>G.V.Prakash Kumar</b></h5>
+                      <p class="text-center p-4">G. V. Prakash Kumar is an Indian music composer, playback singer, actor and producer known for his work in Tamil films and a few Telugu films as well.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </section>
+          <!-- card -->
+
+          <!-- songs -->
+          <div id="langs">
+            <div class="line"></div>
+            <div class="title">
+              <h1>Popular Languages</h1>
+            </div>
+            <section class="carousel_se_02 ">
+              <div class="container-fluid py-5">
+                <div class="container bg-light">
+                  <div class="row">
+                    <div class="col-md-12 px-4 pt-0">
+                      <div class="owl-carousel carousel_se_02_carousel owl-theme y" >
+                        <div class="item">
+                          <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                            <div class="">
+                                <div class="product-image3 hover15" onclick="filters(2)">
+                                  <img src="../images/musicSymbol.jpg" class="img-fluid pic-1" />
+                                </div>
+                              <h4 class="mt-3">Tamil</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item" id="ES">
+                          <div class="col-sm-12 p-2 wow fadeInUp delay-3">
+                            <div class="">
+                                <div class="product-image3 hover15" onclick="filters(3)">
+                                  <img src="../images/musicSymbol.jpg" class="img-fluid pic-1" />
+                                </div>
+                              <h4 class="mt-3">English</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-sm-12 p-2 wow fadeInUp delay-4">
+                            <div class="">
+                                <div class="product-image3 hover15" onclick="filters(4)">
+                                  <img src="../images/musicSymbol.jpg" class="img-fluid pic-1" />
+                                </div>
+                              <h4 class="mt-3">Hindi</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-sm-12 p-2 wow fadeInUp delay-2">
+                            <div class="">
+                                <div class="product-image3 hover15" onclick="filters(5)">
+                                  <img src="../images/musicSymbol.jpg" class="img-fluid pic-1" />
+                                </div>
+                              <h4 class="mt-3">Telugu</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-sm-12 p-2">
+                            <div class="">
+                                <div class="product-image3 hover15" onclick="filters(6)">
+                                  <img src="../images/musicSymbol.jpg" class="img-fluid pic-1" />
+                                </div>
+                              <h4 class="mt-3">Kannada</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="title" id="songs"><h1>Music by Decades</h1></div>
+            <section class="carousel_se_02">
+              <div class="container-fluid py-5">
+                <div class="container bg-light">
+                  <div class="row">
+                    <div class="col-sm-12 text-center wow fadeInUp">
+                    </div>
+                    <div class="col-md-12 px-4 pt-0">
+                      <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                        <!-- 1 -->
+                        <div class="item">
+                          <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                            <div class="">
+                              <div class="product-image3 hover15" onclick="decades(0)">
+                                <img src="../images/musicSymbol.jpg" class="img-fluid pic-1" />
+                              </div>
+                              <h4 class="mt-3">2020's</h4>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <!-- 2 -->
+                        <div class="item">
+                          <div class="col-sm-12 p-2 wow fadeInUp delay-3">
+                            <div class="">
+                              <div class="product-image3 hover15" onclick="decades(1)">
+                                <img src="../images/musicSymbol.jpg" class="img-fluid pic-1" />
+                              </div>
+                              <h4 class="mt-3">2010's</h4>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <!-- 3 -->
+                        <div class="item">
+                          <div class="col-sm-12 p-2 wow fadeInUp delay-4">
+                            <div class="">
+                              <div class="product-image3 hover15" onclick="decades(2)">
+                                <img src="../images/musicSymbol.jpg" class="img-fluid pic-1" />
+                              </div>
+                              <h4 class="mt-3">2000's</h4>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <!-- 4 -->
+                        <div class="item">
+                          <div class="col-sm-12 p-2 wow fadeInUp delay-2">
+                            <div class="">
+                              <div class="product-image3 hover15" onclick="decades(3)">
+                                <img src="../images/musicSymbol.jpg" class="img-fluid pic-1" />
+                              </div>
+                              <h4 class="mt-3">1990's</h4>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <!-- 5 -->
+                        <div class="item">
+                          <div class="col-sm-12 p-2">
+                            <div class="">
+                              <div class="product-image3 hover15" onclick="decades(4)">
+                                <img src="../images/musicSymbol.jpg" class="img-fluid pic-1" />
+                              </div>
+                              <h4 class="mt-3">1980's</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0" style="color: white;">&copy; 2023 Company, Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a href="#"><i class="bi bi-twitter"></i></a></li>
+        <li class="ms-3"><a href="#"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a href="#"><i class="bi bi-facebook"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+    </main>
+    
+    <script src="https://kit.fontawesome.com/e47b98c872.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="../js/homepage.js"></script>
+
+  </body>
+</html>

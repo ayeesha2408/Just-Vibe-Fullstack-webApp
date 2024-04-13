@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just vibe</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+    <link rel="stylesheet" href="music.css">
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">  
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#sidebar"
+        aria-controls="offcanvasExample"
+      >
+        <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+      </button>
+      <a
+        class="navbar-brand me-auto ms-lg-0 text-uppercase fw-bold"
+        href="#"
+        >vibe <span><i class="fa-solid fa-play fa-shake"></i></span> pannrom</a>
+      <div >
+        <a href="" style="text-decoration:none">
+          <h6 class="git" style="bottom: 0"><span style="padding: 0 5px 0 0;"><i class="fa-brands fa-square-github"></i></span>src_code</h6>
+        </a>
+      </div>
+       <!-- <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#topNavBar"
+        aria-controls="topNavBar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span style="color: aqua;"><i class="bi bi-search"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="topNavBar" style="padding-top: 10px;">
+         <form class="d-flex ms-auto my-3 my-lg-0">
+          <div class="input-group">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-dark" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+      </div> -->
+    </div>
+  </nav>
+  <!-- top navigation bar -->
+  <!-- offcanvas -->
+  
+  <div
+    class="offcanvas offcanvas-start sidebar-nav sidebar-wrap"
+    tabindex="-1"
+    id="sidebar">
+    <div class="offcanvas-body p-0">
+      <ul class="nav nav-pills flex-column mb-auto filter-button-group">
+        <li class="profile">
+          <a href="profile.html" class="nav-link">
+              <div class="icon-wrap">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <span>Profile</span>
+          </a>
+        </li>
+        <li class="home">  
+            <a href="homepage.html" class="nav-link">
+                <div class="icon-wrap">
+                    <i class="fas fa-home"></i>
+                </div>
+                <span> Home</span>
+            </a>
+        </li>
+        
+        
+        <li class="nav-item dropdown" >
+        
+          <a
+            class="nav-link dropdown-toggle"
+            id="lang"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <div class="icon-wrap">
+              <i class="fa-solid fa-language"></i>
+            </div>
+            <span>language</span>
+          </a>
+          
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" id="tamil" type = "button" data-filter = "TAMIL">Tamil</a></li>
+            <li><a class="dropdown-item" href="#" id="english" type = "button" data-filter = "ENGLISH">English</a></li>
+            <li><a class="dropdown-item" href="#" id="hindi" type = "button" data-filter = "HINDI">Hindi</a></li>
+            <li><a class="dropdown-item" href="#" id="telugu" type = "button" data-filter = "TELUGU">Telugu</a></li>
+            <li><a class="dropdown-item" href="#" id="kannada" type = "button" data-filter = "KANNADA">Kannada</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown" >
+        
+          <a
+            class="nav-link dropdown-toggle"
+            id="year"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <div class="icon-wrap">
+              <i class="fa-regular fa-calendar-days"></i>
+            </div>
+            <span>Decades</span>
+          </a>
+          
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" id="2020" type = "button" data-filter = "2020">2020's</a></li>
+            <li><a class="dropdown-item" href="#" id="2010" type = "button" data-filter = "2010">2010's</a></li>
+            <li><a class="dropdown-item" href="#" id="2000" type = "button" data-filter = "2000">2000's</a></li>
+            <li><a class="dropdown-item" href="#" id="1990" type = "button" data-filter = "1990">1990's</a></li>
+            <li><a class="dropdown-item" href="#" id="1980" type = "button" data-filter = "1980">1980's</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          
+          <a
+            class="nav-link dropdown-toggle"
+            id="artist"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <div class="icon-wrap">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <span>Artists</span>
+          </a>
+          
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" id="yuvan" type = "button" data-filter = "YUVAN">Yuvan</a></li>
+            <li><a class="dropdown-item" href="#" id="anirudh" type = "button" data-filter = "ANIRUDH">Anirudh</a></li>
+            <li><a class="dropdown-item" href="#" id="gvprakash" type = "button" data-filter = "GVPRAKASH">G.V.Prakash</a></li>
+          </ul>
+      </li>
+        <li class="song">
+          <a href="#" class="nav-link" id="all" type = "button" data-filter = "ALL" >
+              <div class="icon-wrap">
+                <i class="fa-solid fa-record-vinyl"></i>
+              </div>
+              <span>All</span>
+          </a>
+        </li>
+        <li class="liked">
+            <a href="#" class="nav-link" id="liked" type = "button" data-filter = "LIKED" >
+                <div class="icon-wrap">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+                <span>Liked</span>
+            </a>
+        </li>
+        
+        <!-- <li class="pricing">
+            <a href="pricing.html" class="nav-link">
+                <div class="icon-wrap">
+                  <i class="fa-solid fa-sack-dollar fa-bounce"></i>
+                </div>
+                <span>Pricing</span>
+            </a>
+        </li> -->
+      </ul>
+      
+    </div>
+  </div>
+  <main>
+    <div class="a">
+      <div class="container-fluid b">
+        <div class="col-md-12">  
+          
+          <div class="title">
+            <span id="head"></span>
+          </div>
+          <div class="rows row-col-auto r"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="playbar fixed-bottom">
+    <div class="container-fluid">
+      <div class="buttons">
+          <div class="random-track button" id="random" onclick="randomTrack()">
+            <!-- onclick="randomTrack()" -->
+              <i class="fas fa-random" title="random"></i>
+          </div>
+          <div class="prev-track button" id="prev" onclick="prevTrack()">
+              <i class="fa fa-step-backward"></i>
+          </div>
+          <div class="playpause-track button" id="playpause" onclick="playpauseTrack()">
+              <i class="fa fa-play-circle fa-2x"></i>
+          </div>
+          <div class="next-track button" id="next" onclick="nextTrack()">
+              <i class="fa fa-step-forward"></i>
+          </div>
+          <div class="repeat-track button" id="repeat" onclick="repeatTrack()">
+              <i class="fa fa-repeat" title="repeat"></i>
+          </div>
+      </div>
+    </div>
+    
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-md-2 align-self-center"></div>
+          <div class="col-md-8 align-self-center">
+            <div class="slider_container slide">
+              <div class="current-time">00:00</div>
+              <input type="range" min="1" max="100" value="0" class="seek_slider" id="slider" onchange="seekTo()">
+              <div class="total-duration">00:00</div>
+            </div>
+          </div>
+          <div class="col-md-2 align-self-center">
+            <div class="vol">
+              <div class="slider_container">
+                  <i class="fa fa-volume-down"></i>
+                  <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                  <i class="fa fa-volume-up"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+  </div>
+  
+    <script src="https://kit.fontawesome.com/e47b98c872.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="../js/music.js" type="module"></script>
+</body>
+</html>
